@@ -1,0 +1,8 @@
+<form style="width: 700px;" [formGroup]="newblog">
+    <label>Title</label>
+    <input type="text" class="form-control" placeholder="some catch title here..." formControlName="title">
+    <label>Content</label>
+    <textarea type="text" class="form-control" placeholder="once upon a time..." style="height: 400px;" formControlName="content"></textarea>
+    <br>
+    <div class="btn btn-primary" (click)="handlePublish()">Publish</div>
+</form>

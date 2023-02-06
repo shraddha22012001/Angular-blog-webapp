@@ -1,0 +1,20 @@
+<div class="container position-relative" style="height: 100%;top:50px">
+    <div class="row">
+        <div class="col-8">
+            <div *ngIf="blogs.length==0">
+                <br><br>
+                <div class="h3">Nothing to show yet...</div>
+            </div>
+            <!-- available blogs -->
+            <ul  *ngIf="blogs.length>0" class="list-no-style" id="blog-list">
+                <li *ngFor="let blog of blogs">
+                    <app-post [post]=blog></app-post>
+                </li>
+            </ul>
+        </div>
+        <div class="col-4">
+            <!-- user information and options -->
+            <app-usersidebar [display]=true></app-usersidebar>
+        </div>
+    </div>
+</div>

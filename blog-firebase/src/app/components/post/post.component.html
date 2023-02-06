@@ -1,0 +1,29 @@
+<div class="card m-2 standard-shadow" style="min-width: 400px;">
+    <div class="row">
+        <div class="col-md-3 col-sm-12 col">
+            <img src="https://picsum.photos/720/1080?random=1" style="width: 200px;height: 250px;" class="card-img-top m-1"
+                alt="...">
+        </div>
+        <div class="col-md-1 col-sm-12 col"></div>
+        <div class="col-md-8  col-sm-12 col">
+            <div class="card-body">
+                <div class="p-2">
+                    <div class="d-flex">
+                        <img src="https://i.pravatar.cc/50" class="avatar" width="50px"
+                            height="50px">
+                        
+                        <div class="text-primary p-3 h6">
+                            {{post.author}}
+                        </div>
+                    </div>
+                   
+                </div>
+                <h5 class="card-title">{{post.title}}</h5>
+                        <br>
+                        <p class="card-text" style="height: 50px; overflow-y: hidden;">{{post.content}}</p>
+                        <br>
+                        <a href="{{'blog/'+post.id}}" class="btn btn-primary">Read More...</a>
+            </div>
+        </div>
+    </div>
+</div>
